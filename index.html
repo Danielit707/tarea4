@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daniel Cera - Introducción a la Ingeniería de Sistemas (Actividad 4)</title>
+</head>
+<body>
+  <h1>Daniel Cera - Introducción a la Ingeniería de Sistemas (Actividad 4)</h1>
+  <p>Link del Dashboard: <a href="www.asd.com">www.asd.com</a></p>
+  
+  <h2>Pregunta: ¿Existe alguna correlación entre el estado civil y el nivel académico de los migrantes colombianos en función de su área de conocimiento y subárea de especialización?</h2>
+  <p>SELECT estado_civil, __rea_Conocimiento, sub_area_conocimiento, Nivel_Acad__mico
+  , COUNT(*) AS cantidad
+  FROM colombiext.colombext
+  WHERE __rea_Conocimiento != 'NO INDICA' AND __rea_Conocimiento != 'NINGUNA'
+    AND sub_area_conocimiento != 'NO INDICA' AND sub_area_conocimiento != 'NINGUNA'
+    AND Nivel_Acad__mico != 'NO INDICA'
+  GROUP BY estado_civil, __rea_Conocimiento, sub_area_conocimiento, Nivel_Acad__mico
+  ORDER BY cantidad DESC;</p>
+  
+  <p>aoifdjsod</p>
+</body>
+</html>
